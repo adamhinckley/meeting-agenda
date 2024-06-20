@@ -5,7 +5,8 @@ const presiding = "Bishop Rob Dickson";
 const conducting = "Brother Rick Jensen";
 const musicLeader = "Sister Vanessa Pettus";
 const accompanist = "Sister Wendy Infanger";
-const openingHymn = "Sing Praise to Him #70";
+const openingHymn = "70";
+const openingHymnTitle = "Sing Praise to Him";
 const openingPrayer = "By Invitation";
 const sacramentHymn = "There is a Green Hill Far Away #194";
 const speakerOne = "Youth Testimonies as requested";
@@ -22,6 +23,7 @@ export const settings = {
   musicLeader,
   accompanist,
   openingHymn,
+  openingHymnTitle,
   openingPrayer,
   sacramentHymn,
   speakerOne,
