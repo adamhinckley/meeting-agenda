@@ -2,17 +2,17 @@ const isTestimonyMeeting = false;
 
 const date = "June 16, 2024";
 const presiding = "Bishop Rob Dickson";
-const conducting = "Brother Jensen";
+const conducting = "Brother Rick Jensen";
 const musicLeader = "Sister Vanessa Pettus";
 const accompanist = "Sister Wendy Infanger";
-const openingHymn = "O God, the Eternal Father #175";
+const openingHymn = "Sing Praise to Him #70";
 const openingPrayer = "By Invitation";
-const sacramentHymn = "O God, the Eternal Father #175";
-const speakerOne = "Sister Rachel Pettus";
-const specialMusicalNumber = "";
-const intermediateHymn = "I am a child of God #301";
-const speakerTwo = "Sister Amy Bengal";
-const closingHymn = "Our Father, some longer name by Whose Name #296";
+const sacramentHymn = "There is a Green Hill Far Away #194";
+const speakerOne = "Youth Testimonies as requested";
+const specialMusicalNumber = "Ward Choir ~ Search Ponder and Pray";
+const intermediateHymn = "";
+const speakerTwo = "Youth Testimonies as requested";
+const closingHymn = "As I Search the Holy Scriptures #277";
 const closingPrayer = "By Invitation";
 
 export const settings = {
