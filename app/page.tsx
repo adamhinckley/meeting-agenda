@@ -10,6 +10,7 @@ export default function Home() {
     musicLeader,
     accompanist,
     openingHymn,
+    openingHymnTitle,
     openingPrayer,
     sacramentHymn,
     speakerOne,
@@ -44,6 +45,10 @@ export default function Home() {
         <div className="title-container">
           <p className="agenda-title">Opening Hymn</p>
           <p className="agenda-content">{openingHymn}</p>
+        </div>
+        <div className="title-container">
+          <p className="agenda-title">""</p>
+          <p className="agenda-content">{openingHymnTitle}</p>
         </div>
         <div className="title-container">
           <p className="agenda-title">Opening Prayer</p>
