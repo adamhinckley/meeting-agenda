@@ -62,6 +62,16 @@ export default function Home() {
       {isTestimonyMeeting ? (
         <>
           <p className="block">Baring of Testimonies</p>
+          <div className="agenda-block">
+          <div className="title-container">
+              <p className="agenda-title">Closing Hymn</p>
+              <p className="agenda-content">{closingHymn}</p>
+            </div>
+            <div className="title-container">
+              <p className="agenda-title">Closing Prayer</p>
+              <p className="agenda-content">{closingPrayer}</p>
+            </div>
+          </div>
         </>
       ) : (
         <>

@@ -1,5 +1,6 @@
 const isTestimonyMeeting = true;
 
+const date = "June 16, 2024";
 const presiding = "Bishop Rob Dickson";
 const conducting = "Brother Rick Jensen";
 const musicLeader = "Sister Vanessa Pettus";
@@ -13,7 +14,6 @@ const intermediateHymn = "I am a child of God #301";
 const speakerTwo = "Sister Amy Bengal";
 const closingHymn = "Our Father, by Whose Name #296";
 const closingPrayer = "By Invitation";
-const date = "June 16, 2024";
 
 export const settings = {
   isTestimonyMeeting,
