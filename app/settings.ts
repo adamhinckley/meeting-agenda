@@ -1,4 +1,4 @@
-const isTestimonyMeeting = true;
+const isTestimonyMeeting = false;
 
 const date = "June 16, 2024";
 const presiding = "Bishop Rob Dickson";
