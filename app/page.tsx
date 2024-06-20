@@ -3,7 +3,6 @@ import styles from "./page.module.css";
 import { settings } from "./settings";
 
 export default function Home() {
-
   const {
     isTestimonyMeeting,
     presiding,
@@ -63,7 +62,7 @@ export default function Home() {
         <>
           <p className="block">Baring of Testimonies</p>
           <div className="agenda-block">
-          <div className="title-container">
+            <div className="title-container">
               <p className="agenda-title">Closing Hymn</p>
               <p className="agenda-content">{closingHymn}</p>
             </div>
