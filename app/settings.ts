@@ -12,7 +12,7 @@ const speakerOne = "Sister Rachel Pettus";
 const specialMusicalNumber = "";
 const intermediateHymn = "I am a child of God #301";
 const speakerTwo = "Sister Amy Bengal";
-const closingHymn = "Our Father, by Whose Name #296";
+const closingHymn = "Our Father, some longer name by Whose Name #296";
 const closingPrayer = "By Invitation";
 
 export const settings = {
