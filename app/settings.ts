@@ -1,4 +1,4 @@
-const isTestimonyMeeting = false;
+const isTestimonyMeeting = true;
 
 const presiding = "Bishop Rob Dickson";
 const conducting = "Brother Rick Jensen";
