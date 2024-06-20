@@ -2,7 +2,7 @@ const isTestimonyMeeting = false;
 
 const date = "June 16, 2024";
 const presiding = "Bishop Rob Dickson";
-const conducting = "Brother Rick Jensen";
+const conducting = "Brother Jensen";
 const musicLeader = "Sister Vanessa Pettus";
 const accompanist = "Sister Wendy Infanger";
 const openingHymn = "O God, the Eternal Father #175";
