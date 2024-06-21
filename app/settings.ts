@@ -26,39 +26,39 @@ const closingPrayer = "By Invitation";
 
 // Announcements
 const wardAnnouncements = [
-  'The Addiction Recovery Program (ARP) meets every Tuesday at 7:00 PM. Jim & April Sturtevant (530) 906-3289.',
+  'The Addiction Recovery Program (ARP) contact Jim & April Sturtevant (530) 906-3289.',
   'Empty Nesters Family Home Evenings Mondays at 6:00 PM in R.S. Room. Potluck to follow.',
   'Ward Choir practice rehearsals on the 1st (6-5) & 3rd (6-19) Wednesday of each month at 6:45 PM.',
-  'Ward Ice Cream Social June 20th at 6:00 PM at the church.'
+  'Ward 5th Sunday Potluck after church June 30th. Bring something to share.'
 ]
 
 const reliefSocietyLessons = [
   {
     link: '',
-    text: 'June 5 – R.S. Sisters Luncheon 12:00 at the church.'
-  },
-  {
-    link: '',
-    text: 'June 9 – Elder Gong: “All Things for Our Good”'
+    text: 'July 3 – R.S. Sisters Luncheon 12:00 at the church.'
   },
   {
     link: 'https://www.churchofjesuschrist.org/study/general-conference/2024/04/54held?lang=eng',
     text: 'June 23 – Elder Held: “Opposition in All Things”'
+  },
+  {
+    link: 'https://www.churchofjesuschrist.org/study/general-conference/2024/04/15dushku?lang=eng',
+    text: 'July 14 - Elder Dushku: “Pillars and Rays”'
   }
 ]
 
 const priesthoodLessons = [
   {
-    link: '',
-    text: 'June 9 – Miracles, Angels, and Priesthood Power - Elder Shayne M. Bowen'
-  },
-  {
-    link: '',
-    text: 'June 14 – EQ Presidency Temple Trip to Nashville Temple – Depart Ward building at 8:30 AM. All temple recommend holders welcome.'
-  },
-  {
     link: 'https://www.churchofjesuschrist.org/study/general-conference/2024/04/35uchtdorf?lang=eng',
-    text: 'June 23 – A Higher Joy - Elder Dieter F. Uchtdorf'
+    text: 'June 23 – "A Higher Joy" - Elder Dieter F. Uchtdorf'
+  },
+  {
+    link: 'https://www.churchofjesuschrist.org/study/general-conference/2024/04/53stevenson?lang=eng',
+    text: 'July 14 – "Bridging the Two Great Commandments" - Elder Gary E. Stevenson'
+  },
+  {
+    link: '',
+    text: 'July 19 – EQ Presidency Temple Trip to Nashville Temple – Depart Ward building at 8:30 AM. All temple recommend holders welcome.'
   }
 ]
 
@@ -86,7 +86,7 @@ const sundaySchoolLessons = [
 ]
 
 const primaryAnnouncements = [
-  'Primary Activity Night on the 2nd (6-12) & 4th (6-26) Wednesday at 6:30 PM.',
+  'Primary Activity Night on the 2nd (7-10) & 4th (6-26) Wednesday at 6:30 PM.',
 ]
 
 //page three
@@ -97,7 +97,7 @@ const buildingCleaningSchedule = [
 
 //This one requires back ticks instead of regular quotes because it uses the same quotes in the text.
 const familyHistoryCorner = [
-  `From Come, Follow Me :When we face setbacks and disappointments as we serve in the Lord's kingdom, we can remember how God supported and led Alma, and … trust that God will support and lead us too. In what ways can you increase your efforts to share your family's history? Sharing your family history may require persistence, patience, and creativity. … Remember, however, everyone has an innate desire to know where they come from. (theFHguide.com)`
+  `"For we without [our ancestors] cannot be made perfect; neither can they without us be made perfect" (D&C 128:18). Many of our deceased ancestors are being taught the gospel in the spirit world - they need our help and we need theirs! (theFHguide.com) Have you used Ordinance Ready to find family names for the temple? (Watch the ward Facebook group this week for a video demonstrating how.)`
 ]
 
 const wardFocusTempleCorner = [
