@@ -1,5 +1,6 @@
 body {
   background-color: #f1f1f4;
+  margin: 0 auto;
 }
 p,
 h2,
@@ -36,7 +37,6 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 12px;
 
   h2 {
     font-size: 1rem;
@@ -65,4 +65,8 @@ h2 {
   .agenda-content {
     justify-content: flex-end;
   }
+  .hymn {
+    margin: 0;
+  }
 }
+
