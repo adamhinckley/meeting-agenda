@@ -20,6 +20,7 @@ h2 {
   white-space: nowrap;
   font-size: clamp(1rem, 1vw, 2rem);
   text-align: center;
+  margin-top: 8px;
 }
 
 .date {
