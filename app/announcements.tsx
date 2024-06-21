@@ -31,7 +31,10 @@ const Announcements = () => {
       </h2>
       <ul>
         {priesthoodLessons.map((lesson, index) => (
+          <a href="https://www.churchofjesuschrist.org/study/general-conference/2024/04/31bowen?lang=eng" key={index}>
+
           <li key={index}>{lesson}</li>
+          </a>
         ))}
       </ul>
       <h2 style={{ textAlign: "center" }}>Sunday School Lessons (1st & 3rd)</h2>
