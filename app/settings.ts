@@ -5,7 +5,6 @@ const imageUrl = 'https://content.churchofjesuschrist.org/templesldsorg/bc/Templ
 
 // agenda
 const isTestimonyMeeting = false;
-const date = "June 16, 2024";
 const presiding = "Bishop Rob Dickson";
 const conducting = "Brother Rick Jensen";
 const musicLeader = "Sister Vanessa Pettus";
@@ -125,7 +124,6 @@ export const settings = {
   closingHymn,
   closingHymnTitle,
   closingPrayer,
-  date,
   wardAnnouncements,
   reliefSocietyLessons,
   priesthoodLessons,

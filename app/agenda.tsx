@@ -19,14 +19,25 @@ const {
   closingHymn,
   closingHymnTitle,
   closingPrayer,
-  date,
 } = settings;
+
+
+const currentDate = (() => {
+  const date = new Date();
+  const options: Intl.DateTimeFormatOptions = {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  };
+  return date.toLocaleDateString("en-US", options);
+})();
+
 
 const Agenda = () => {
   return (
     <div style={{ margin: "0 12px" }}>
       <h1 className="heading">Florence Ward Sacrament Meeting</h1>
-      <p className="date">{date}</p>
+      <p className="date">{currentDate}</p>
       <div className="leader-container">
         <div>
           <h2>Presiding</h2>
