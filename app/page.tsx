@@ -9,7 +9,6 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <FrontPage />
-      <hr />
       <Agenda />
       <hr />
       <Announcements />
