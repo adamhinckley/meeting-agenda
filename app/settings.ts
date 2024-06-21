@@ -30,23 +30,56 @@ const wardAnnouncements = [
 ]
 
 const reliefSocietyLessons = [
-  'June 5 – R.S. Sisters Luncheon 12:00 at the church.',
-  'June 9 – Elder Gong: “All Things for Our Good”',
-  'June 23 – Elder Held: “Opposition in All Things”'
+  {
+    link: '',
+    text: 'June 5 – R.S. Sisters Luncheon 12:00 at the church.'
+  },
+  {
+    link: '',
+    text: 'June 9 – Elder Gong: “All Things for Our Good”'
+  },
+  {
+    link: 'https://www.churchofjesuschrist.org/study/general-conference/2024/04/54held?lang=eng',
+    text: 'June 23 – Elder Held: “Opposition in All Things”'
+  }
 ]
 
 const priesthoodLessons = [
-'June 9 – Miracles, Angels, and Priesthood Power - Elder Shayne M. Bowen',
-'June 14 – EQ Presidency Temple Trip to Nashville Temple – Depart Ward building at 8:30 AM. All temple recommend holders welcome.',
-'June 23 – A Higher Joy - Elder Dieter F. Uchtdorf'
+  {
+    link: '',
+    text: 'June 9 – Miracles, Angels, and Priesthood Power - Elder Shayne M. Bowen'
+  },
+  {
+    link: '',
+    text: 'June 14 – EQ Presidency Temple Trip to Nashville Temple – Depart Ward building at 8:30 AM. All temple recommend holders welcome.'
+  },
+  {
+    link: 'https://www.churchofjesuschrist.org/study/general-conference/2024/04/35uchtdorf?lang=eng',
+    text: 'June 23 – A Higher Joy - Elder Dieter F. Uchtdorf'
+  }
 ]
 
 const sundaySchoolLessons = [
-  'May 27–June 2: Mosiah 25–28',
-  'June 3–9: Mosiah 29–Alma 4',
-  'June 10–16: Alma 5–7',
-  'June 17–23: Alma 8–12',
-  'June 24–30: Alma 13–16'
+  {
+    link: '',
+    text: 'May 27–June 2: Mosiah 25–28'
+  },
+  {
+    link: '',
+    text: 'June 3–9: Mosiah 29–Alma 4'
+  },
+  {
+    link: '',
+    text: 'June 10–16: Alma 5–7'
+  },
+  {
+    link: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-book-of-mormon-2024/25?lang=eng',
+    text: 'June 17–23: Alma 8–12'
+  },
+  {
+    link: 'https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-book-of-mormon-2024/26?lang=eng',
+    text: 'June 24–30: Alma 13–16'
+  }
 ]
 
 const primaryAnnouncements = [

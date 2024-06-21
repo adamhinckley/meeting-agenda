@@ -28,8 +28,8 @@ const Agenda = () => {
         <div>
           <h2>Presiding</h2>
           <h2>Conducting</h2>
-          <h2>Music Leader</h2>
-          <h2>Accompanist</h2>
+          <h2>Chorister</h2>
+          <h2>Organist</h2>
         </div>
         <div className="names">
           <h2>{presiding}</h2>
@@ -42,7 +42,7 @@ const Agenda = () => {
       <div className="agenda-block">
         <div className="title-container hymn">
           <p className="agenda-title">Opening Hymn</p>
-          <p className="agenda-content" style={{}}>
+          <p className="agenda-content">
             {openingHymn}
           </p>
         </div>

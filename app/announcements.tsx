@@ -23,7 +23,9 @@ const Announcements = () => {
       </h2>
       <ul>
         {reliefSocietyLessons.map((lesson, index) => (
-          <li key={index}>{lesson}</li>
+          lesson.link ? <a href={lesson.link} key={index}>
+          <li key={index}>{lesson.text}</li>
+          </a> : <li key={index}>{lesson.text}</li>
         ))}
       </ul>
       <h2 style={{ textAlign: "center" }}>
@@ -31,16 +33,18 @@ const Announcements = () => {
       </h2>
       <ul>
         {priesthoodLessons.map((lesson, index) => (
-          <a href="https://www.churchofjesuschrist.org/study/general-conference/2024/04/31bowen?lang=eng" key={index}>
-
-          <li key={index}>{lesson}</li>
-          </a>
+          lesson.link ? <a href={lesson
+          .link} key={index}>
+          <li key={index}>{lesson.text}</li>
+          </a> : <li key={index}>{lesson.text}</li>
         ))}
       </ul>
       <h2 style={{ textAlign: "center" }}>Sunday School Lessons (1st & 3rd)</h2>
       <ul>
         {sundaySchoolLessons.map((lesson, index) => (
-          <li key={index}>{lesson}</li>
+          lesson.link ? <a href={lesson.link} key={index}>
+          <li key={index}>{lesson.text}</li>
+          </a> : <li key={index}>{lesson.text}</li>
         ))}
       </ul>
       <h2 style={{ textAlign: "center" }}>Primary Announcements</h2>
