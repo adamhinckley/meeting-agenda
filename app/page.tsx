@@ -47,7 +47,7 @@ export default function Home() {
           <p className="agenda-content">{openingHymn}</p>
         </div>
         <div className="title-container">
-          <p className="agenda-title">""</p>
+          <div></div>
           <p className="agenda-content">{openingHymnTitle}</p>
         </div>
         <div className="title-container">
