@@ -56,6 +56,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     margin: 8px 0;
+    width: 100%;
   }
   .agenda-title {
     white-space: nowrap;
@@ -65,8 +66,18 @@ h2 {
   .agenda-content {
     justify-content: flex-end;
   }
-  .hymn {
+
+  .no-margin {
     margin: 0;
   }
+  .hymn {
+    display: flex;
+    justify-content: center;
+  }
+  .title {
+    display: flex;
+    justify-content: center;
+  }
+
 }
 

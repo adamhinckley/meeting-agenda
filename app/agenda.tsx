@@ -43,13 +43,12 @@ const Agenda = () => {
       </div>
       <p className="block">Ward Announcements</p>
       <div className="agenda-block">
-        <div className="title-container">
+        <div className="title-container no-margin">
           <p className="agenda-title">Opening Hymn</p>
           <p className="agenda-content">{openingHymn}</p>
         </div>
-        <div className="title-container">
-          <div />
-          <p className="agenda-content">{openingHymnTitle}</p>
+        <div className="title-container  hymn">
+          <p className="agenda-content title">{openingHymnTitle}</p>
         </div>
         <div className="title-container">
           <p className="agenda-title">Opening Prayer</p>
@@ -59,11 +58,10 @@ const Agenda = () => {
       <p className="block">Stake and Ward Business</p>
       <div className="agenda-block">
         <div className="title-container">
-          <p className="agenda-title">Sacrament Hymn</p>
-          <p className="agenda-content">{sacramentHymn}</p>
+          <p className="agenda-title no-margin">Sacrament Hymn</p>
+          <p className="agenda-content ">{sacramentHymn}</p>
         </div>
-        <div className="title-container">
-          <div />
+        <div className="title-container hymn">
           <p className="agenda-content">{sacramentHymnTitle}</p>
         </div>
       </div>
@@ -72,12 +70,11 @@ const Agenda = () => {
         <>
           <p className="block">Bearing of Testimonies</p>
           <div className="agenda-block">
-            <div className="title-container">
+            <div className="title-container no-margin">
               <p className="agenda-title">Closing Hymn</p>
               <p className="agenda-content">{closingHymn}</p>
             </div>
-            <div className="title-container">
-              {/* <div /> */}
+            <div className="title-container hymn">
               <p className="agenda-content">{closingHymnTitle}</p>
             </div>
             <div className="title-container">
@@ -103,11 +100,11 @@ const Agenda = () => {
             )}
             {intermediateHymn && (
               <>
-                <div className="title-container">
+                <div className="title-container no-margin">
                   <p className="agenda-title">Intermediate Hymn</p>
                   <p className="agenda-content">{intermediateHymn}</p>
                 </div>
-                <div className="title-container">
+                <div className="title-container hymn">
                   <div />
                   <p className="agenda-content">{intermediateHymnTitle}</p>
                 </div>
@@ -117,12 +114,11 @@ const Agenda = () => {
               <p className="agenda-title">Speaker</p>
               <p className="agenda-content">{speakerTwo}</p>
             </div>
-            <div className="title-container">
+            <div className="title-container no-margin">
               <p className="agenda-title">Closing Hymn</p>
               <p className="agenda-content">{closingHymn}</p>
             </div>
-            <div className="title-container">
-              {/* <div /> */}
+            <div className="title-container hymn">
               <p className="agenda-content">{closingHymnTitle}</p>
             </div>
             <div className="title-container">
