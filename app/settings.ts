@@ -13,12 +13,15 @@ const accompanist = "Sister Wendy Infanger";
 const openingHymn = "70";
 const openingHymnTitle = "Sing Praise to Him";
 const openingPrayer = "By Invitation";
-const sacramentHymn = "There is a Green Hill Far Away #194";
+const sacramentHymn = "194";
+const sacramentHymnTitle = "There is a Green Hill Far Away";
 const speakerOne = "Youth Testimonies as requested";
-const specialMusicalNumber = "Ward Choir ~ Search Ponder and Pray";
+const specialMusicalNumber = "Search Ponder and Pray";
 const intermediateHymn = "";
+const intermediateHymnTitle = "";
 const speakerTwo = "Youth Testimonies as requested";
-const closingHymn = "As I Search the Holy Scriptures #277";
+const closingHymn = "277";
+const closingHymnTitle = "As I Search the Holy Scriptures";
 const closingPrayer = "By Invitation";
 
 // Announcements
@@ -113,11 +116,14 @@ export const settings = {
   openingHymnTitle,
   openingPrayer,
   sacramentHymn,
+  sacramentHymnTitle,
   speakerOne,
   specialMusicalNumber,
   intermediateHymn,
+  intermediateHymnTitle,
   speakerTwo,
   closingHymn,
+  closingHymnTitle,
   closingPrayer,
   date,
   wardAnnouncements,
