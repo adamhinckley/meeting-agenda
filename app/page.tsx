@@ -14,11 +14,14 @@ export default function Home() {
     openingHymnTitle,
     openingPrayer,
     sacramentHymn,
+    sacramentHymnTitle,
     speakerOne,
     specialMusicalNumber,
     intermediateHymn,
+    intermediateHymnTitle,
     speakerTwo,
     closingHymn,
+    closingHymnTitle,
     closingPrayer,
     date,
   } = settings;
@@ -48,7 +51,7 @@ export default function Home() {
           <p className="agenda-content">{openingHymn}</p>
         </div>
         <div className="title-container">
-          <p className="agenda-title">""</p>
+        <div/>
           <p className="agenda-content">{openingHymnTitle}</p>
         </div>
         <div className="title-container">
@@ -62,15 +65,23 @@ export default function Home() {
           <p className="agenda-title">Sacrament Hymn</p>
           <p className="agenda-content">{sacramentHymn}</p>
         </div>
+        <div className="title-container">
+        <div/>
+          <p className="agenda-content">{sacramentHymnTitle}</p>
+        </div>
       </div>
       <p className="block">Sacrament Administered by the Aaronic Priesthood</p>
       {isTestimonyMeeting ? (
         <>
-          <p className="block">Baring of Testimonies</p>
+          <p className="block">Bearing of Testimonies</p>
           <div className="agenda-block">
           <div className="title-container">
               <p className="agenda-title">Closing Hymn</p>
               <p className="agenda-content">{closingHymn}</p>
+            </div>
+            <div className="title-container">
+            <div/>
+              <p className="agenda-content">{closingHymnTitle}</p>
             </div>
             <div className="title-container">
               <p className="agenda-title">Closing Prayer</p>
@@ -98,6 +109,10 @@ export default function Home() {
                 <p className="agenda-title">Intermediate Hymn</p>
                 <p className="agenda-content">{intermediateHymn}</p>
               </div>
+              <div className="title-container">
+               <div/>
+              <p className="agenda-content">{intermediateHymnTitle}</p>
+            </div>
             )}
             <div className="title-container">
               <p className="agenda-title">Speaker</p>
@@ -106,6 +121,10 @@ export default function Home() {
             <div className="title-container">
               <p className="agenda-title">Closing Hymn</p>
               <p className="agenda-content">{closingHymn}</p>
+            </div>
+            <div className="title-container">
+            <div/>
+              <p className="agenda-content">{closingHymnTitle}</p>
             </div>
             <div className="title-container">
               <p className="agenda-title">Closing Prayer</p>
