@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Florence Ward Sacrament Meeting",
+  title: "Agenda",
   description: "Sacrament Meeting Agenda for Florence Ward",
 };
 
