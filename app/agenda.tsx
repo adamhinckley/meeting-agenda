@@ -1,5 +1,9 @@
 "use client";
+import ClosingHymnAndPrayer from "./closingHymnAndPrayer";
+import PreSacramentAgenda from "./preSacramentAgenda";
 import { settings } from "./settings";
+import StandardSecondHalf from "./standardSecondHalf";
+import TwoMinuteHymnTestimonies from "./twoMinuteHymnTestimonies";
 const {
   isTestimonyMeeting,
   presiding,
@@ -21,7 +25,6 @@ const {
   closingPrayer,
 } = settings;
 
-
 const currentDate = (() => {
   const date = new Date();
   const options: Intl.DateTimeFormatOptions = {
@@ -32,113 +35,13 @@ const currentDate = (() => {
   return date.toLocaleDateString("en-US", options);
 })();
 
-
 const Agenda = () => {
   return (
     <div style={{ margin: "0 12px" }}>
-      <h1 className="heading">Florence Ward Sacrament Meeting</h1>
-      <p className="date">{currentDate}</p>
-      <div className="leader-container">
-        <div>
-          <h2>Presiding</h2>
-          <h2>Conducting</h2>
-          <h2>Chorister</h2>
-          <h2>Organist</h2>
-        </div>
-        <div className="names">
-          <h2>{presiding}</h2>
-          <h2>{conducting}</h2>
-          <h2>{musicLeader}</h2>
-          <h2>{accompanist}</h2>
-        </div>
-      </div>
-      <p className="block">Ward Announcements</p>
-      <div className="agenda-block">
-        <div className="title-container no-margin">
-          <p className="agenda-title">Opening Hymn</p>
-          <p className="agenda-content">{openingHymn}</p>
-        </div>
-        <div className="title-container  hymn">
-          <p className="agenda-content title">{openingHymnTitle}</p>
-        </div>
-        <div className="title-container">
-          <p className="agenda-title">Opening Prayer</p>
-          <p className="agenda-content">{openingPrayer}</p>
-        </div>
-      </div>
-      <p className="block">Stake and Ward Business</p>
-      <div className="agenda-block">
-        <div className="title-container">
-          <p className="agenda-title no-margin">Sacrament Hymn</p>
-          <p className="agenda-content ">{sacramentHymn}</p>
-        </div>
-        <div className="title-container hymn">
-          <p className="agenda-content">{sacramentHymnTitle}</p>
-        </div>
-      </div>
-      <p className="block">Sacrament Administered by the Aaronic Priesthood</p>
-      {isTestimonyMeeting ? (
-        <>
-          <p className="block">Bearing of Testimonies</p>
-          <div className="agenda-block">
-            <div className="title-container no-margin">
-              <p className="agenda-title">Closing Hymn</p>
-              <p className="agenda-content">{closingHymn}</p>
-            </div>
-            <div className="title-container hymn">
-              <p className="agenda-content">{closingHymnTitle}</p>
-            </div>
-            <div className="title-container">
-              <p className="agenda-title">Closing Prayer</p>
-              <p className="agenda-content">{closingPrayer}</p>
-            </div>
-          </div>
-        </>
-      ) : (
-        <>
-          <div className="agenda-block">
-            <div className="title-container">
-              <p className="agenda-title">Speaker</p>
-              <p className="agenda-content">{speakerOne}</p>
-            </div>
-          </div>
-          <div className="agenda-block">
-            {specialMusicalNumber && (
-              <div className="title-container">
-                <p className="agenda-title">Special Musical Number</p>
-                <p className="agenda-content">{specialMusicalNumber}</p>
-              </div>
-            )}
-            {intermediateHymn && (
-              <>
-                <div className="title-container no-margin">
-                  <p className="agenda-title">Intermediate Hymn</p>
-                  <p className="agenda-content">{intermediateHymn}</p>
-                </div>
-                <div className="title-container hymn">
-                  <div />
-                  <p className="agenda-content">{intermediateHymnTitle}</p>
-                </div>
-              </>
-            )}
-            <div className="title-container">
-              <p className="agenda-title">Speaker</p>
-              <p className="agenda-content">{speakerTwo}</p>
-            </div>
-            <div className="title-container no-margin">
-              <p className="agenda-title">Closing Hymn</p>
-              <p className="agenda-content">{closingHymn}</p>
-            </div>
-            <div className="title-container hymn">
-              <p className="agenda-content">{closingHymnTitle}</p>
-            </div>
-            <div className="title-container">
-              <p className="agenda-title">Closing Prayer</p>
-              <p className="agenda-content">{closingPrayer}</p>
-            </div>
-          </div>
-        </>
-      )}
+      <PreSacramentAgenda />
+      <TwoMinuteHymnTestimonies />
+      {/* <StandardSecondHalf/> */}
+      <ClosingHymnAndPrayer />
     </div>
   );
 };
