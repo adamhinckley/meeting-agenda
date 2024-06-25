@@ -13,18 +13,18 @@ const presiding = "Bishop Rob Dickson";
 const conducting = "Brother Rick Jensen";
 const musicLeader = "Sister Vanessa Pettus";
 const accompanist = "Sister Wendy Infanger";
-const openingHymn = "70";
-const openingHymnTitle = "Sing Praise to Him";
+const openingHymn = "26";
+const openingHymnTitle = "Joseph Smith’s First Prayer";
 const openingPrayer = "By Invitation";
-const sacramentHymn = "194";
-const sacramentHymnTitle = "There is a Green Hill Far Away";
+const sacramentHymn = "180";
+const sacramentHymnTitle = "Father in Heaven We Do Believe";
 const speakerOne = "Youth Testimonies as requested";
-const specialMusicalNumber = "Search Ponder and Pray";
-const intermediateHymn = "";
+const specialMusicalNumber = "How Great Thou Art";
+const intermediateHymn = "Peggy Gulli, Rebekah Bungei, Wendy Infanger";
 const intermediateHymnTitle = "";
 const speakerTwo = "Youth Testimonies as requested";
-const closingHymn = "277";
-const closingHymnTitle = "As I Search the Holy Scriptures";
+const closingHymn = "78";
+const closingHymnTitle = "God of Our Fathers, Whose Almighty Hand";
 const closingPrayer = "By Invitation";
 
 // Announcements
