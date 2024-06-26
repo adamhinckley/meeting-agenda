@@ -13,8 +13,15 @@ const {
   sacramentHymnTitle,
 } = settings;
 
-const currentDate = (() => {
+const currentOrNextSundayDate = (() => {
   const date = new Date();
+  // Get the current day of the week, 0 (Sunday) - 6 (Saturday)
+  const currentDay = date.getDay();
+  // If today is Sunday, don't add any days. Otherwise, calculate how many days to add to get to the next Sunday
+  const daysUntilNextSunday = currentDay === 0 ? 0 : 7 - currentDay;
+  // Add the necessary days to get to the next Sunday or stay on the current date if it's already Sunday
+  date.setDate(date.getDate() + daysUntilNextSunday);
+
   const options: Intl.DateTimeFormatOptions = {
     year: "numeric",
     month: "long",
@@ -27,7 +34,7 @@ const PreSacramentAgenda = () => {
   return (
     <>
       <h1 className="heading">Florence Ward Sacrament Meeting</h1>
-      <p className="date">{currentDate}</p>
+      <p className="date">{currentOrNextSundayDate}</p>
       <div className="leader-container">
         <div>
           <h2>Presiding</h2>
