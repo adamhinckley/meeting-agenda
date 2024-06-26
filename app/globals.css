@@ -63,8 +63,7 @@ h2 {
   .multiple-performers {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 8px 0;
+    margin: 4px 0;
   }
   .agenda-title {
     white-space: nowrap;

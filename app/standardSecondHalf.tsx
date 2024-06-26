@@ -26,7 +26,7 @@ const StandardSecondHalf = () => {
           <div className="agenda-block">
             {hasMultiplePerformers ? (
               <>
-                <div className="title-container">
+                <div className="title-container no-margin">
                   <p className="agenda-title">{intermediateMusic.title}</p>
                   <p className="agenda-content">
                     {intermediateMusic.songTitle}
