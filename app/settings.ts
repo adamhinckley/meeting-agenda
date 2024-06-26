@@ -49,6 +49,8 @@ const wardAnnouncements = [
 const reliefSocietyLessons = [
   {
     text: "Lessons:",
+  }
+  {
     link: "https://www.churchofjesuschrist.org/study/general-conference/2024/04/54held?lang=eng",
     text: "June 23 – Elder Held: “Opposition in All Things”",
   },
@@ -58,6 +60,8 @@ const reliefSocietyLessons = [
   },
    {
     text: "Activities:",
+   }
+  {
     link: "",
     text: "July 3 – R.S. Sisters Luncheon 12:00 at the church.",
   },
@@ -66,6 +70,8 @@ const reliefSocietyLessons = [
 const priesthoodLessons = [
   {
     text: "Lessons:",
+  }
+  {
     link: "https://www.churchofjesuschrist.org/study/general-conference/2024/04/35uchtdorf?lang=eng",
     text: 'June 23 – "A Higher Joy" - Elder Dieter F. Uchtdorf',
   },
@@ -75,6 +81,8 @@ const priesthoodLessons = [
   },
   {
     text: "Activities:",
+  }
+  {
     link: "",
     text: "July 19 – EQ Presidency Temple Trip to Nashville Temple – Depart Ward building at 8:30 AM. All temple recommend holders welcome.",
   },
@@ -115,7 +123,7 @@ const buildingCleaningSchedule = [
 
 //This one requires back ticks instead of regular quotes because it uses the same quotes in the text.
 const familyHistoryCorner = [
-  `"For we without [our ancestors] cannot be made perfect; neither can they without us be made perfect" (D&C 128:18). Many of our deceased ancestors are being taught the gospel in the spirit world - they need our help and we need theirs! (theFHguide.com) Have you used Ordinance Ready to find family names for the temple? (Watch the ward Facebook group this week for a video demonstrating how.)`,
+  `You can be an instrument in God's hands to bless millions of people in the work of salvation by … indexing. How? Indexing helps others who are searching for their ancestors by making records searchable online so that important saving ordinances may be performed on their behalf. Indexing is an easy way for anyone to be involved in family history. No [temple recommend or] experience in family history is necessary. (theFHguide.com) See FamilySearch.org/Indexing`,
 ];
 
 const wardFocusTempleCorner = [
