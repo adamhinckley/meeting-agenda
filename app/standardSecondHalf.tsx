@@ -2,12 +2,7 @@
 import { settings } from "./settings";
 import "./globals.css";
 
-const {
-  blockOne,
-  blockTwo,
-  intermediateMusic,
-  isTestimonyMeeting,
-} = settings;
+const { blockOne, blockTwo, intermediateMusic, isTestimonyMeeting } = settings;
 
 const hasMultiplePerformers = intermediateMusic.performers.length > 1;
 
@@ -31,27 +26,29 @@ const StandardSecondHalf = () => {
           <div className="agenda-block">
             {hasMultiplePerformers ? (
               <>
-              <div className="title-container">
-                <p className="agenda-title">{intermediateMusic.title}</p>
-                <p className="agenda-content">
-                 {intermediateMusic.songTitle}
-                </p>
-              </div>
-              {intermediateMusic.performers.map((performer, index) => (
-                <div className="multiple-performers" key={index}>
-                  <p className="agenda-content">{performer}</p>
+                <div className="title-container">
+                  <p className="agenda-title">{intermediateMusic.title}</p>
+                  <p className="agenda-content">
+                    {intermediateMusic.songTitle}
+                  </p>
                 </div>
-              ))}
+                {intermediateMusic.performers.map((performer, index) => (
+                  <div className="multiple-performers" key={index}>
+                    <p className="agenda-content">{performer}</p>
+                  </div>
+                ))}
               </>
             ) : (
               <>
-              <div className="title-container">
-                <p className="agenda-title">{intermediateMusic.title}</p>
-                <p className="agenda-content">
-                  {intermediateMusic.hymnNumber}
+                <div className="title-container">
+                  <p className="agenda-title">{intermediateMusic.title}</p>
+                  <p className="agenda-content">
+                    {intermediateMusic.hymnNumber}
+                  </p>
+                </div>
+                <p className="agenda-content hymn">
+                  {intermediateMusic.songTitle}
                 </p>
-              </div>
-                <p className="agenda-content hymn">{intermediateMusic.songTitle}</p>
               </>
             )}
             {blockTwo.map((block, index) => {
