@@ -18,7 +18,7 @@ const sacramentHymnTitle = "Father in Heaven We Do Believe";
 const blockOne = [
   {
     title: "Speaker",
-    content: "Youth Testimonies as requested",
+    content: "Testimonies as requested",
   },
 ];
 const intermediateMusic = {
@@ -31,7 +31,7 @@ const intermediateMusic = {
 const blockTwo = [
   {
     title: "Speaker",
-    content: "Youth Testimonies as requested",
+    content: "Testimonies as requested",
   },
 ];
 const closingHymn = "78";
@@ -48,10 +48,7 @@ const wardAnnouncements = [
 
 const reliefSocietyLessons = [
   {
-    link: "",
-    text: "July 3 – R.S. Sisters Luncheon 12:00 at the church.",
-  },
-  {
+    text: "Lessons:",
     link: "https://www.churchofjesuschrist.org/study/general-conference/2024/04/54held?lang=eng",
     text: "June 23 – Elder Held: “Opposition in All Things”",
   },
@@ -59,10 +56,16 @@ const reliefSocietyLessons = [
     link: "https://www.churchofjesuschrist.org/study/general-conference/2024/04/15dushku?lang=eng",
     text: "July 14 - Elder Dushku: “Pillars and Rays”",
   },
+   {
+    text: "Activities:",
+    link: "",
+    text: "July 3 – R.S. Sisters Luncheon 12:00 at the church.",
+  },
 ];
 
 const priesthoodLessons = [
   {
+    text: "Lessons:",
     link: "https://www.churchofjesuschrist.org/study/general-conference/2024/04/35uchtdorf?lang=eng",
     text: 'June 23 – "A Higher Joy" - Elder Dieter F. Uchtdorf',
   },
@@ -71,6 +74,7 @@ const priesthoodLessons = [
     text: 'July 14 – "Bridging the Two Great Commandments" - Elder Gary E. Stevenson',
   },
   {
+    text: "Activities:",
     link: "",
     text: "July 19 – EQ Presidency Temple Trip to Nashville Temple – Depart Ward building at 8:30 AM. All temple recommend holders welcome.",
   },
