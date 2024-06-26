@@ -1,8 +1,5 @@
 // front page
 // this app has configuration that will not allow images to be used unless they are from 'churchofjesuschrist.org.
-
-import { title } from "process";
-
 // We can add more domains if it's necessary.
 const imageUrl =
   "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/Trujillo-Peru-Temple-2.jpg";
@@ -18,11 +15,25 @@ const openingHymnTitle = "Joseph Smith’s First Prayer";
 const openingPrayer = "By Invitation";
 const sacramentHymn = "180";
 const sacramentHymnTitle = "Father in Heaven We Do Believe";
-const speakerOne = "Youth Testimonies as requested";
-const specialMusicalNumber = "How Great Thou Art";
-const intermediateHymn = "Peggy Gulli, Rebekah Bungei, Wendy Infanger";
-const intermediateHymnTitle = "";
-const speakerTwo = "Youth Testimonies as requested";
+const blockOne = [
+  {
+    title: "Speaker",
+    content: "Youth Testimonies as requested",
+  },
+];
+const intermediateMusic = {
+  title: "Special Musical Number",
+  performers: ["Peggy Gulli", "Rebekah Bungei", "Wendy Infanger"], // If there are multiple performers, list them here separated by commas.
+  songTitle: "How Great Thou Art",
+  hymnNumber: "", // This will not show when performers are listed.
+};
+
+const blockTwo = [
+  {
+    title: "Speaker",
+    content: "Youth Testimonies as requested",
+  },
+];
 const closingHymn = "78";
 const closingHymnTitle = "God of Our Fathers, Whose Almighty Hand";
 const closingPrayer = "By Invitation";
@@ -108,21 +119,6 @@ const wardFocusTempleCorner = [
   "Knowledge is key in everything we do. From learning to tie or your shoes to  performing a life saving operation you must put forth effort and time in order to gain the knowledge required to perform these skills. Dieter F Uchtdorf said “What we love determines what we seek. What we seek determines what we think and do. What we think and do determines who we are and who we will become.” As we seek to draw closer to the Lord and learn more about him we will be able to gain knowledge of him, his love for us and ultimately become more like him.",
 ];
 
-const twoMinuteHymns = [
-  {
-    link: "https://www.churchofjesuschrist.org/study/friend/2020/02/i-will-walk-with-jesus?lang=eng",
-    title: "I Will Walk with Jesus",
-    number: "1004",
-    speaker: "Adam Hinckley",
-  },
-  {
-    link: "",
-    title: "Some placeholder song",
-    number: "2001",
-    speaker: "Albert Einstein",
-  },
-];
-
 export const settings = {
   isTestimonyMeeting,
   presiding,
@@ -134,11 +130,9 @@ export const settings = {
   openingPrayer,
   sacramentHymn,
   sacramentHymnTitle,
-  speakerOne,
-  specialMusicalNumber,
-  intermediateHymn,
-  intermediateHymnTitle,
-  speakerTwo,
+  blockOne,
+  intermediateMusic,
+  blockTwo,
   closingHymn,
   closingHymnTitle,
   closingPrayer,
@@ -151,5 +145,4 @@ export const settings = {
   familyHistoryCorner,
   wardFocusTempleCorner,
   imageUrl,
-  twoMinuteHymns,
 };

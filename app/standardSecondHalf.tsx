@@ -3,13 +3,13 @@ import { settings } from "./settings";
 import "./globals.css";
 
 const {
-  speakerOne,
-  speakerTwo,
-  specialMusicalNumber,
-  intermediateHymn,
-  intermediateHymnTitle,
+  blockOne,
+  blockTwo,
+  intermediateMusic,
   isTestimonyMeeting,
 } = settings;
+
+const hasMultiplePerformers = intermediateMusic.performers.length > 1;
 
 const StandardSecondHalf = () => {
   return (
@@ -18,35 +18,52 @@ const StandardSecondHalf = () => {
         <p className="block">Bearing of Testimonies</p>
       ) : (
         <>
-          <div className="agenda-block">
-            <div className="title-container">
-              <p className="agenda-title">Speaker</p>
-              <p className="agenda-content">{speakerOne}</p>
-            </div>
-          </div>
-          <div className="agenda-block">
-            {specialMusicalNumber && (
-              <div className="title-container">
-                <p className="agenda-title">Special Musical Number</p>
-                <p className="agenda-content">{specialMusicalNumber}</p>
+          {blockOne.map((block, index) => {
+            return block.content ? (
+              <div className="agenda-block" key={index}>
+                <div className="title-container">
+                  <p className="agenda-title">{block.title}</p>
+                  <p className="agenda-content">{block.content}</p>
+                </div>
               </div>
-            )}
-            {intermediateHymn && (
+            ) : null;
+          })}
+          <div className="agenda-block">
+            {hasMultiplePerformers ? (
               <>
-                <div className="title-container no-margin">
-                  <p className="agenda-title">Intermediate Hymn</p>
-                  <p className="agenda-content">{intermediateHymn}</p>
+              <div className="title-container">
+                <p className="agenda-title">{intermediateMusic.title}</p>
+                <p className="agenda-content">
+                 {intermediateMusic.songTitle}
+                </p>
+              </div>
+              {intermediateMusic.performers.map((performer, index) => (
+                <div className="multiple-performers" key={index}>
+                  <p className="agenda-content">{performer}</p>
                 </div>
-                <div className="title-container hymn">
-                  <div />
-                  <p className="agenda-content">{intermediateHymnTitle}</p>
-                </div>
+              ))}
+              </>
+            ) : (
+              <>
+              <div className="title-container">
+                <p className="agenda-title">{intermediateMusic.title}</p>
+                <p className="agenda-content">
+                  {intermediateMusic.hymnNumber}
+                </p>
+              </div>
+                <p className="agenda-content hymn">{intermediateMusic.songTitle}</p>
               </>
             )}
-            <div className="title-container">
-              <p className="agenda-title">Speaker</p>
-              <p className="agenda-content">{speakerTwo}</p>
-            </div>
+            {blockTwo.map((block, index) => {
+              return block.content ? (
+                <div className="agenda-block" key={index}>
+                  <div className="title-container">
+                    <p className="agenda-title">{block.title}</p>
+                    <p className="agenda-content">{block.content}</p>
+                  </div>
+                </div>
+              ) : null;
+            })}
           </div>
         </>
       )}
