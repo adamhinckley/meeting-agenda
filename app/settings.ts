@@ -64,7 +64,9 @@ const reliefSocietyLessons = [
 	{
 		link: '',
 		text: 'July 3 – R.S. Sisters Luncheon 12:00 at the church.',
-		'July 18 at 7:00 PM Combined EQ/RS Game Night. Bring a game toshare or just come have fun. Child care provided.', 
+	},
+	{
+		text: 'July 18 at 7:00 PM Combined EQ/RS Game Night. Bring a game to share or just come have fun. Child care provided.',
 	},
 ];
 
