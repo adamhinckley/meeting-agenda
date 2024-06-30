@@ -2,8 +2,8 @@
 // this app has configuration that will not allow images to be used unless they are from 'churchofjesuschrist.org.
 // We can add more domains if it's necessary.
 const imageUrl =
-	'https://www.churchofjesuschrist.org/media/image/fort-collins-temple-sunset-9ea119c?lang=eng&collectionId=2472c374d8394f768daa301e60550010',
- /* https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/Trujillo-Peru-Temple-2.jpg';  */
+	'https://www.churchofjesuschrist.org/imgs/9ea119c36c7384d775ee8779753b8bff64d33f52/full/1600%2C/0/default';
+/* https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/Trujillo-Peru-Temple-2.jpg';  */
 
 // agenda
 const isTestimonyMeeting = true;
@@ -44,7 +44,7 @@ const wardAnnouncements = [
 	'The Addiction Recovery Program (ARP) contact Jim & April Sturtevant (530) 906-3289.',
 	'Empty Nesters Family Home Evenings Mondays at 6:00 PM in R.S. Room. Potluck to follow.',
 	'Ward Choir practice rehearsals on the 1st (7-3) & 3rd (7-17) Wednesday of each month at 6:45 PM.',
-	];
+];
 
 const reliefSocietyLessons = [
 	{
