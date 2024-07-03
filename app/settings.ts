@@ -141,8 +141,8 @@ const familyHistoryCorner = [
 ];
 
 const wardFocusTempleCorner = [
-	'For this year we would like to encourage members to focus on developing Christ like attributes. This month we are focusing on Knowledge.',
-	'Knowledge is key in everything we do. From learning to tie or your shoes to  performing a life saving operation you must put forth effort and time in order to gain the knowledge required to perform these skills. Dieter F Uchtdorf said “What we love determines what we seek. What we seek determines what we think and do. What we think and do determines who we are and who we will become.” As we seek to draw closer to the Lord and learn more about him we will be able to gain knowledge of him, his love for us and ultimately become more like him.',
+	'For this year we would like to encourage members to focus on developing Christ like attributes. This month we are focusing on Patience.',
+	'Patience is not idleness or passive resignation. It is “cheerfully [doing] all things that lie in [your] power” as you serve God (Doctrine and Covenants 123:17). You plant, water, and nourish the seed, and God gives the increase “by and by”',
 ];
 
 export const settings = {
