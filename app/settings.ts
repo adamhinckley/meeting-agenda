@@ -131,7 +131,13 @@ const buildingCleaningSchedule = [
 
 //This one requires back ticks instead of regular quotes because it uses the same quotes in the text.
 const familyHistoryCorner = [
-	`You can be an instrument in God's hands to bless millions of people in the work of salvation by … indexing. How? Indexing helps others who are searching for their ancestors by making records searchable online so that important saving ordinances may be performed on their behalf. Indexing is an easy way for anyone to be involved in family history. No [temple recommend or] experience in family history is necessary. (theFHguide.com) See FamilySearch.org/Indexing`,
+	'How can you help your family receive the fruit of the gospel and the blessings of temple and family history? (paraphrased from Sister Rosemary M. Wixom, RootsTech 2016)',
+	'Learn from living relatives.',
+	'Create a family gathering.',
+	'Make our ancestors real through their stories.',
+	'Use the Sabbath for family history activities.',
+	'Provide temple ordinances for those who are waiting.',
+	'Share information on the FamilySearch Memories App.',
 ];
 
 const wardFocusTempleCorner = [
