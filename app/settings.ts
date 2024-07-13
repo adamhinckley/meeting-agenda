@@ -131,18 +131,12 @@ const buildingCleaningSchedule = [
 
 //This one requires back ticks instead of regular quotes because it uses the same quotes in the text.
 const familyHistoryCorner = [
-	'How can you help your family receive the fruit of the gospel and the blessings of temple and family history? (paraphrased from Sister Rosemary M. Wixom, RootsTech 2016)',
-	'Learn from living relatives.',
-	'Create a family gathering.',
-	'Make our ancestors real through their stories.',
-	'Use the Sabbath for family history activities.',
-	'Provide temple ordinances for those who are waiting.',
-	'Share information on the FamilySearch Memories App.',
+	`You can be an instrument in God's hands to bless millions of people in the work of salvation by … indexing. How? Indexing helps others who are searching for their ancestors by making records searchable online so that important saving ordinances may be performed on their behalf. Indexing is an easy way for anyone to be involved in family history. No [temple recommend or] experience in family history is necessary. (theFHguide.com) See FamilySearch.org/Indexing`,
 ];
 
 const wardFocusTempleCorner = [
-	'For this year we would like to encourage members to focus on developing Christ like attributes. This month we are focusing on Patience.',
-	'Patience is not idleness or passive resignation. It is “cheerfully [doing] all things that lie in [your] power” as you serve God (Doctrine and Covenants 123:17). You plant, water, and nourish the seed, and God gives the increase “by and by”',
+	'For this year we would like to encourage members to focus on developing Christ like attributes. This month we are focusing on Knowledge.',
+	'Knowledge is key in everything we do. From learning to tie or your shoes to  performing a life saving operation you must put forth effort and time in order to gain the knowledge required to perform these skills. Dieter F Uchtdorf said “What we love determines what we seek. What we seek determines what we think and do. What we think and do determines who we are and who we will become.” As we seek to draw closer to the Lord and learn more about him we will be able to gain knowledge of him, his love for us and ultimately become more like him.',
 ];
 
 export const settings = {
