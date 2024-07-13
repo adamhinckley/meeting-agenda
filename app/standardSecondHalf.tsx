@@ -13,6 +13,7 @@ const StandardSecondHalf = () => {
 		blockTwo,
 		blockThree,
 		intermediateMusicPerformers,
+		intermediateMusicLink,
 	} = content;
 
 	const hasMultiplePerformers =
@@ -47,7 +48,22 @@ const StandardSecondHalf = () => {
 							<>
 								<div className="title-container no-margin">
 									<p className="agenda-title">{intermediateMusic.title}</p>
-									<p className="agenda-content">{intermediateMusic.songTitle}</p>
+									{intermediateMusicLink ? (
+										<a
+											href={intermediateMusicLink as string}
+											target="_blank"
+											rel="noreferrer"
+											className="underline text-blue-800"
+										>
+											<p className="agenda-content">
+												{intermediateMusic.songTitle}
+											</p>
+										</a>
+									) : (
+										<p className="agenda-content">
+											{intermediateMusic.songTitle}
+										</p>
+									)}
 								</div>
 								{intermediateMusicPerformers.map((performer, index) => (
 									<div className="multiple-performers" key={index}>

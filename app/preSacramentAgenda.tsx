@@ -33,6 +33,8 @@ const PreSacramentAgenda = () => {
 		sacramentHymn,
 		sacramentHymnTitle,
 		blockOne,
+		openingHymnLink,
+		sacramentHymnLink,
 	} = content;
 	return (
 		<>
@@ -56,7 +58,18 @@ const PreSacramentAgenda = () => {
 			<div className="agenda-block">
 				<div className="title-container no-margin">
 					<p className="agenda-title">Opening Hymn</p>
-					<p className="agenda-content">{openingHymn as string}</p>
+					{openingHymnLink ? (
+						<a
+							href={openingHymnLink as string}
+							target="_blank"
+							rel="noreferrer"
+							className="underline text-blue-800"
+						>
+							<p className="agenda-content">{openingHymn as string}</p>
+						</a>
+					) : (
+						<p className="agenda-content">{openingHymn as string}</p>
+					)}
 				</div>
 				<div className="title-container  hymn">
 					<p className="agenda-content title">{openingHymnTitle as string}</p>
@@ -82,7 +95,18 @@ const PreSacramentAgenda = () => {
 			<div className="agenda-block">
 				<div className="title-container">
 					<p className="agenda-title no-margin">Sacrament Hymn</p>
-					<p className="agenda-content ">{sacramentHymn as string}</p>
+					{sacramentHymnLink ? (
+						<a
+							href={sacramentHymnLink as string}
+							target="_blank"
+							rel="noreferrer"
+							className="underline text-blue-800"
+						>
+							<p className="agenda-content">{sacramentHymn as string}</p>
+						</a>
+					) : (
+						<p className="agenda-content ">{sacramentHymn as string}</p>
+					)}
 				</div>
 				<div className="title-container hymn">
 					<p className="agenda-content">{sacramentHymnTitle as string}</p>
