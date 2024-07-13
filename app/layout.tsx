@@ -1,22 +1,26 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
+import App from 'next/app';
+import { AppContextProvider } from '@/context/AppContext';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Ward Program",
-  description: "Sacrament Meeting Agenda for Florence Ward",
+	title: 'Ward Program',
+	description: 'Sacrament Meeting Agenda for Florence Ward',
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<AppContextProvider>
+				<body className={inter.className}>{children}</body>
+			</AppContextProvider>
+		</html>
+	);
 }
