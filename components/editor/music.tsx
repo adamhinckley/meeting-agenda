@@ -17,7 +17,6 @@ const MusicEditor = ({
 	handleChange,
 	handleDeleteBlockIndex,
 	handleAddBlockIndex,
-	handleCheckboxChange,
 }: EditorChildren) => {
 	const { content } = useAppContext();
 	return (
@@ -43,6 +42,15 @@ const MusicEditor = ({
 				label="Opening Hymn Title"
 				sx={{ mb: 2 }}
 			/>
+			<Textfield
+				name="openingHymnLink"
+				value={content.openingHymnLink}
+				onChange={handleChange}
+				fullWidth
+				label="Opening Hymn Link"
+				sx={{ mb: 2 }}
+				helperText="Optional - link will be added to the hymn number if provided"
+			/>
 			<Divider sx={{ margin: '12px 0' }} />
 			<Typography sx={{ mb: 1 }}>Sacrament Hymn</Typography>
 			<Textfield
@@ -62,6 +70,16 @@ const MusicEditor = ({
 				label="Sacrament Hymn Title"
 				sx={{ mb: 2 }}
 			/>
+			<Textfield
+				name="sacramentHymnLink"
+				value={content.sacramentHymnLink}
+				onChange={handleChange}
+				fullWidth
+				label="Sacrament Hymn Link"
+				sx={{ mb: 2 }}
+				helperText="Optional - link will be added to the song title if provided"
+			/>
+
 			<Divider sx={{ margin: '12px 0' }} />
 
 			<Typography sx={{ mb: 1 }}>Intermediate Music</Typography>
@@ -82,6 +100,15 @@ const MusicEditor = ({
 				fullWidth
 				label="Song Title"
 				sx={{ mb: 2 }}
+			/>
+			<Textfield
+				name="intermediateMusicLink"
+				value={content.intermediateMusicLink}
+				onChange={handleChange}
+				fullWidth
+				label="Intermediate Hymn Link"
+				sx={{ mb: 2 }}
+				helperText="Optional - link will be added to the hymn number if provided"
 			/>
 			{Array.isArray(content.intermediateMusicPerformers) &&
 				content.intermediateMusicPerformers.length === 0 && (
@@ -158,6 +185,15 @@ const MusicEditor = ({
 				fullWidth
 				label="Closing Hymn Title"
 				sx={{ mb: 2 }}
+			/>
+			<Textfield
+				name="closingHymnLink"
+				value={content.closingHymnLink}
+				onChange={handleChange}
+				fullWidth
+				label="Closing Hymn Link"
+				sx={{ mb: 2 }}
+				helperText="Optional - link will be added to the hymn number if provided"
 			/>
 		</Accordion>
 	);

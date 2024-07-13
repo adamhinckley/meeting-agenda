@@ -2,12 +2,23 @@ import { useAppContext } from '@/context/AppContext';
 
 const ClosingHymnAndPrayer = () => {
 	const { content } = useAppContext();
-	const { closingHymn, closingHymnTitle, closingPrayer } = content;
+	const { closingHymn, closingHymnTitle, closingPrayer, closingHymnLink } = content;
 	return (
 		<div className="agenda-block">
 			<div className="title-container no-margin">
 				<p className="agenda-title">Closing Hymn</p>
-				<p className="agenda-content">{closingHymn as string}</p>
+				{closingHymnLink ? (
+					<a
+						href={closingHymnLink as string}
+						target="_blank"
+						rel="noreferrer"
+						className="underline text-blue-800"
+					>
+						<p className="agenda-content">{closingHymn as string}</p>
+					</a>
+				) : (
+					<p className="agenda-content">{closingHymn as string}</p>
+				)}
 			</div>
 			<div className="title-container hymn">
 				<p className="agenda-content">{closingHymnTitle as string}</p>
