@@ -9,7 +9,7 @@ const StandardSecondHalf = () => {
 
 	const {
 		isTestimonyMeeting,
-		intermediateMusic: intermediateMusictoNarrow,
+		intermediateMusic: intermediateMusicToNarrow,
 		blockTwo,
 		blockThree,
 		intermediateMusicPerformers,
@@ -19,7 +19,7 @@ const StandardSecondHalf = () => {
 	const hasMultiplePerformers =
 		Array.isArray(intermediateMusicPerformers) && intermediateMusicPerformers.length > 1;
 
-	const intermediateMusic = intermediateMusictoNarrow as {
+	const intermediateMusic = intermediateMusicToNarrow as {
 		title: string;
 		hymnNumber: string;
 		songTitle: string;
@@ -75,7 +75,22 @@ const StandardSecondHalf = () => {
 							<>
 								<div className="title-container">
 									<p className="agenda-title">{intermediateMusic.title}</p>
-									<p className="agenda-content">{intermediateMusic.hymnNumber}</p>
+									{intermediateMusicLink ? (
+										<a
+											href={intermediateMusicLink as string}
+											target="_blank"
+											rel="noreferrer"
+											className="underline text-blue-800"
+										>
+											<p className="agenda-content">
+												{intermediateMusic.hymnNumber}
+											</p>
+										</a>
+									) : (
+										<p className="agenda-content">
+											{intermediateMusic.hymnNumber}
+										</p>
+									)}
 								</div>
 								<p className="agenda-content hymn">{intermediateMusic.songTitle}</p>
 							</>
