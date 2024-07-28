@@ -13,7 +13,7 @@ const StandardSecondHalf = () => {
 		blockTwo,
 		blockThree,
 		intermediateMusicPerformers,
-		intermediateMusicLink,
+		intermediateMusicLink: savedIntermediateMusicLink,
 	} = content;
 
 	const hasMultiplePerformers =
@@ -24,6 +24,16 @@ const StandardSecondHalf = () => {
 		hymnNumber: string;
 		songTitle: string;
 	};
+
+	const intermediateMusicTitleSlug = intermediateMusic?.songTitle
+		?.toLowerCase()
+		.trim()
+		.replace(/[^a-z\s]/g, '')
+		.replace(/\s/g, '-');
+
+	const intermediateMusicLink =
+		savedIntermediateMusicLink ||
+		`https://www.churchofjesuschrist.org/study/manual/hymns/${intermediateMusicTitleSlug}?lang=eng`;
 
 	return (
 		<>

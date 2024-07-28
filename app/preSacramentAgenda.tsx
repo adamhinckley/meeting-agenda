@@ -40,11 +40,14 @@ const PreSacramentAgenda = () => {
 	const openingHymnTitleSlug = openingHymnTitle
 		//@ts-ignore
 		?.toLowerCase()
+		.trim()
 		.replace(/[^a-z\s]/g, '')
 		.replace(/\s/g, '-');
+
 	const sacramentHymnTitleSlug = sacramentHymnTitle
 		//@ts-ignore
 		?.toLowerCase()
+		.trim()
 		.replace(/[^a-z\s]/g, '')
 		.replace(/\s/g, '-');
 
