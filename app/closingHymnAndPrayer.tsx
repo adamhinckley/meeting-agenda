@@ -1,6 +1,5 @@
 import { useAppContext } from '@/context/AppContext';
 import { getHymnLink } from '@/utils/helpers';
-import { get } from 'lodash';
 
 const ClosingHymnAndPrayer = () => {
 	const { content } = useAppContext();
