@@ -8,7 +8,6 @@ import IconButton from '@mui/material/IconButton';
 import Button from '@mui/material/Button';
 import AddIcon from '@mui/icons-material/Add';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
-import Switch from '@mui/material/Switch';
 
 import type { EditorChildren } from '@/utils/types';
 import { Divider } from '@mui/material';
@@ -19,6 +18,11 @@ const MusicEditor = ({
 	handleAddBlockIndex,
 }: EditorChildren) => {
 	const { content } = useAppContext();
+
+	const linkWarning =
+		'If there is a link from last week, update or delete it.  Note: the automatic links will not work for hymns 1,000 and up.  A link need to be manually added for those hymns.  Links in the program should be tested each week to ensure they are working as expected.';
+
+	const linkHelperText = 'Optional';
 	return (
 		<Accordion sx={{ padding: '0 12px 6px 12px' }}>
 			<AccordionSummary expandIcon={<ExpandMoreIcon />}>
@@ -42,6 +46,9 @@ const MusicEditor = ({
 				label="Opening Hymn Title"
 				sx={{ mb: 2 }}
 			/>
+			<Typography sx={{ mb: 1, fontSize: `${14 / 16}rem`, color: 'blue' }}>
+				{linkWarning}
+			</Typography>
 			<Textfield
 				name="openingHymnLink"
 				value={content.openingHymnLink}
@@ -49,7 +56,7 @@ const MusicEditor = ({
 				fullWidth
 				label="Opening Hymn Link"
 				sx={{ mb: 2 }}
-				helperText="Optional - link will be added to the hymn number if provided"
+				helperText={linkHelperText}
 			/>
 			<Divider sx={{ margin: '12px 0' }} />
 			<Typography sx={{ mb: 1 }}>Sacrament Hymn</Typography>
@@ -70,6 +77,9 @@ const MusicEditor = ({
 				label="Sacrament Hymn Title"
 				sx={{ mb: 2 }}
 			/>
+			<Typography sx={{ mb: 1, fontSize: `${14 / 16}rem`, color: 'blue' }}>
+				{linkWarning}
+			</Typography>
 			<Textfield
 				name="sacramentHymnLink"
 				value={content.sacramentHymnLink}
@@ -77,7 +87,7 @@ const MusicEditor = ({
 				fullWidth
 				label="Sacrament Hymn Link"
 				sx={{ mb: 2 }}
-				helperText="Optional - link will be added to the song title if provided"
+				helperText={linkHelperText}
 			/>
 
 			<Divider sx={{ margin: '12px 0' }} />
@@ -101,6 +111,9 @@ const MusicEditor = ({
 				label="Song Title"
 				sx={{ mb: 2 }}
 			/>
+			<Typography sx={{ mb: 1, fontSize: `${14 / 16}rem`, color: 'blue' }}>
+				{linkWarning}
+			</Typography>
 			<Textfield
 				name="intermediateMusicLink"
 				value={content.intermediateMusicLink}
@@ -108,7 +121,7 @@ const MusicEditor = ({
 				fullWidth
 				label="Intermediate Hymn Link"
 				sx={{ mb: 2 }}
-				helperText="Optional - link will be added to the hymn number if provided"
+				helperText={linkHelperText}
 			/>
 			{Array.isArray(content.intermediateMusicPerformers) &&
 				content.intermediateMusicPerformers.length === 0 && (
@@ -186,6 +199,9 @@ const MusicEditor = ({
 				label="Closing Hymn Title"
 				sx={{ mb: 2 }}
 			/>
+			<Typography sx={{ mb: 1, fontSize: `${14 / 16}rem`, color: 'blue' }}>
+				{linkWarning}
+			</Typography>
 			<Textfield
 				name="closingHymnLink"
 				value={content.closingHymnLink}
@@ -193,7 +209,7 @@ const MusicEditor = ({
 				fullWidth
 				label="Closing Hymn Link"
 				sx={{ mb: 2 }}
-				helperText="Optional - link will be added to the hymn number if provided"
+				helperText={linkHelperText}
 			/>
 		</Accordion>
 	);

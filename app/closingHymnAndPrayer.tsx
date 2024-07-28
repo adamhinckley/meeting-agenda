@@ -2,7 +2,22 @@ import { useAppContext } from '@/context/AppContext';
 
 const ClosingHymnAndPrayer = () => {
 	const { content } = useAppContext();
-	const { closingHymn, closingHymnTitle, closingPrayer, closingHymnLink } = content;
+	const {
+		closingHymn,
+		closingHymnTitle,
+		closingPrayer,
+		closingHymnLink: savedClosingHymnLink,
+	} = content;
+	const closingHymnTitleSlug = closingHymnTitle
+		//@ts-ignore
+		?.toLowerCase()
+		.replace(/[^a-z\s]/g, '')
+		.replace(/\s/g, '-');
+
+	const closingHymnLink =
+		savedClosingHymnLink ||
+		`https://www.churchofjesuschrist.org/study/manual/hymns/${closingHymnTitleSlug}?lang=eng`;
+
 	return (
 		<div className="agenda-block">
 			<div className="title-container no-margin">

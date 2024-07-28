@@ -33,9 +33,29 @@ const PreSacramentAgenda = () => {
 		sacramentHymn,
 		sacramentHymnTitle,
 		blockOne,
-		openingHymnLink,
-		sacramentHymnLink,
+		openingHymnLink: savedOpeningHymnLink,
+		sacramentHymnLink: savedSacramentHymnLink,
 	} = content;
+
+	const openingHymnTitleSlug = openingHymnTitle
+		//@ts-ignore
+		?.toLowerCase()
+		.replace(/[^a-z\s]/g, '')
+		.replace(/\s/g, '-');
+	const sacramentHymnTitleSlug = sacramentHymnTitle
+		//@ts-ignore
+		?.toLowerCase()
+		.replace(/[^a-z\s]/g, '')
+		.replace(/\s/g, '-');
+
+	const openingHymnLink =
+		savedOpeningHymnLink ||
+		`https://www.churchofjesuschrist.org/study/manual/hymns/${openingHymnTitleSlug}?lang=eng`;
+
+	const sacramentHymnLink =
+		savedSacramentHymnLink ||
+		`https://www.churchofjesuschrist.org/study/manual/hymns/${sacramentHymnTitleSlug}?lang=eng`;
+
 	return (
 		<>
 			<h1 className="text-base font-semibold text-center mt-2">{title as string}</h1>
