@@ -11,6 +11,7 @@ const ClosingHymnAndPrayer = () => {
 	const closingHymnTitleSlug = closingHymnTitle
 		//@ts-ignore
 		?.toLowerCase()
+		.trim()
 		.replace(/[^a-z\s]/g, '')
 		.replace(/\s/g, '-');
 
