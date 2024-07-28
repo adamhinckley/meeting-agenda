@@ -22,7 +22,7 @@ const Announcements = () => {
 			{announcementsAndLessons.map((itemToNarrow, index) => {
 				const item = itemToNarrow as Lesson | Announcement;
 
-				if (item.type === 'lesson') {
+				if (item.type === 'lesson' && item.lessons?.length) {
 					return (
 						<div key={index}>
 							<h3 className="text-base font-semibold text-center">{item.title}</h3>
@@ -47,7 +47,7 @@ const Announcements = () => {
 						</div>
 					);
 				}
-				if (item.type === 'announcement') {
+				if (item.type === 'announcement' && item.text?.length) {
 					return (
 						<div key={index}>
 							<h3 className="text-base font-semibold text-center">{item.title}</h3>
