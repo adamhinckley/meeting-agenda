@@ -1,5 +1,6 @@
 'use client';
 import { useAppContext } from '@/context/AppContext';
+import { getHymnLink } from '@/utils/helpers';
 
 const currentOrNextSundayDate = (() => {
 	const date = new Date();
@@ -37,27 +38,16 @@ const PreSacramentAgenda = () => {
 		sacramentHymnLink: savedSacramentHymnLink,
 	} = content;
 
-	const openingHymnTitleSlug = openingHymnTitle
-		//@ts-ignore
-		?.toLowerCase()
-		.trim()
-		.replace(/[^a-z\s]/g, '')
-		.replace(/\s/g, '-');
-
-	const sacramentHymnTitleSlug = sacramentHymnTitle
-		//@ts-ignore
-		?.toLowerCase()
-		.trim()
-		.replace(/[^a-z\s]/g, '')
-		.replace(/\s/g, '-');
-
-	const openingHymnLink =
-		savedOpeningHymnLink ||
-		`https://www.churchofjesuschrist.org/study/manual/hymns/${openingHymnTitleSlug}?lang=eng`;
-
-	const sacramentHymnLink =
-		savedSacramentHymnLink ||
-		`https://www.churchofjesuschrist.org/study/manual/hymns/${sacramentHymnTitleSlug}?lang=eng`;
+	const openingHymnLink = getHymnLink(
+		openingHymn as string,
+		openingHymnTitle as string,
+		savedOpeningHymnLink as string,
+	);
+	const sacramentHymnLink = getHymnLink(
+		sacramentHymn as string,
+		sacramentHymnTitle as string,
+		savedSacramentHymnLink as string,
+	);
 
 	return (
 		<>
