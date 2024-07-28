@@ -1,4 +1,5 @@
 import { useAppContext } from '@/context/AppContext';
+import { getHymnLink } from '@/utils/helpers';
 
 const StandardSecondHalf = () => {
 	const { content } = useAppContext();
@@ -25,15 +26,11 @@ const StandardSecondHalf = () => {
 		songTitle: string;
 	};
 
-	const intermediateMusicTitleSlug = intermediateMusic?.songTitle
-		?.toLowerCase()
-		.trim()
-		.replace(/[^a-z\s]/g, '')
-		.replace(/\s/g, '-');
-
-	const intermediateMusicLink =
-		savedIntermediateMusicLink ||
-		`https://www.churchofjesuschrist.org/study/manual/hymns/${intermediateMusicTitleSlug}?lang=eng`;
+	const intermediateMusicLink = getHymnLink(
+		intermediateMusic.hymnNumber,
+		intermediateMusic.songTitle,
+		savedIntermediateMusicLink as string,
+	);
 
 	return (
 		<>

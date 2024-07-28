@@ -1,4 +1,6 @@
 import { useAppContext } from '@/context/AppContext';
+import { getHymnLink } from '@/utils/helpers';
+import { get } from 'lodash';
 
 const ClosingHymnAndPrayer = () => {
 	const { content } = useAppContext();
@@ -8,16 +10,12 @@ const ClosingHymnAndPrayer = () => {
 		closingPrayer,
 		closingHymnLink: savedClosingHymnLink,
 	} = content;
-	const closingHymnTitleSlug = closingHymnTitle
-		//@ts-ignore
-		?.toLowerCase()
-		.trim()
-		.replace(/[^a-z\s]/g, '')
-		.replace(/\s/g, '-');
 
-	const closingHymnLink =
-		savedClosingHymnLink ||
-		`https://www.churchofjesuschrist.org/study/manual/hymns/${closingHymnTitleSlug}?lang=eng`;
+	const closingHymnLink = getHymnLink(
+		closingHymn as string,
+		closingHymnTitle as string,
+		savedClosingHymnLink as string,
+	);
 
 	return (
 		<div className="agenda-block">
