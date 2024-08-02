@@ -68,6 +68,10 @@ const MusicEditor = ({
 				getOptionLabel={(option) => `${option.number} - ${option.title}`}
 				renderInput={(params) => <Textfield {...params} label="Opening Hymn" />}
 				onChange={(e, value) => handleHymnChange(value, 'openingHymn')}
+				value={{
+					number: Number(content.openingHymn),
+					title: content.openingHymnTitle as string,
+				}}
 			/>
 			<div className="flex items-center">
 				<Typography>Using a new opening hymn?</Typography>
@@ -97,6 +101,10 @@ const MusicEditor = ({
 				getOptionLabel={(option) => `${option.number} - ${option.title}`}
 				renderInput={(params) => <Textfield {...params} label="Sacrament Hymn" />}
 				onChange={(e, value) => handleHymnChange(value, 'sacramentHymn')}
+				value={{
+					number: Number(content.sacramentHymn),
+					title: content.sacramentHymnTitle as string,
+				}}
 			/>
 			<div className="flex items-center">
 				<Typography>Using a new sacrament hymn?</Typography>
@@ -221,6 +229,10 @@ const MusicEditor = ({
 				getOptionLabel={(option) => `${option.number} - ${option.title}`}
 				renderInput={(params) => <Textfield {...params} label="Closing Hymn" />}
 				onChange={(e, value) => handleHymnChange(value, 'closingHymn')}
+				value={{
+					number: Number(content.closingHymn),
+					title: content.closingHymnTitle as string,
+				}}
 			/>
 			<div className="flex items-center">
 				<Typography>Using a new closing hymn?</Typography>
