@@ -49,13 +49,6 @@ const Editor = () => {
 
 	const handleChange = (e, block, index) => {
 		if (block) {
-			if (block === 'intermediateMusic') {
-				setContent({
-					...content,
-					[block]: { ...content[block], [e.target.name]: e.target.value },
-				});
-				return;
-			}
 			if (Array.isArray(content[block]) && typeof content[block][0] === 'string') {
 				// Check if content[block] is an array of strings
 				const newBlock = content[block].map((item, i) => {

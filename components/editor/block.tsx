@@ -56,14 +56,14 @@ const Block = ({
 						{/* <div className="min-w-full flex justify-between content-center"> */}
 						<Textfield
 							name="left"
-							value={block.left}
+							value={block.left || ''}
 							onChange={(e) => handleChange(e, blockName, index)}
 							label="left side"
 							sx={{ mb: 2, width: '46%' }}
 						/>
 						<Textfield
 							name="right"
-							value={block.right}
+							value={block.right || ''}
 							onChange={(e) => handleChange(e, blockName, index)}
 							label="right side"
 							sx={{ mb: 2, width: '46%' }}

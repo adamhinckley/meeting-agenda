@@ -14,23 +14,20 @@ const StandardSecondHalf = () => {
 		blockTwo,
 		blockThree,
 		intermediateMusicPerformers,
-		intermediateMusicLink: savedIntermediateMusicLink,
+		intermediateHymnTitle,
+		intermediateHymnNumber,
+		intermediateMusicLeftSide,
+		intermediateMusicRightSide,
+		intermediateHymnLink: savedIntermediateMusicLink,
 	} = content;
 
-	const hasMultiplePerformers =
-		Array.isArray(intermediateMusicPerformers) && intermediateMusicPerformers.length > 1;
-
-	const intermediateMusic = intermediateMusicToNarrow as {
-		title: string;
-		hymnNumber: string;
-		songTitle: string;
-	};
-
 	const intermediateMusicLink = getHymnLink(
-		intermediateMusic.hymnNumber,
-		intermediateMusic.songTitle,
+		intermediateHymnNumber as string,
+		intermediateHymnTitle as string,
 		savedIntermediateMusicLink as string,
 	);
+
+	const isIntermediateMusicHymn = content.intermediateMusicType === 'hymn';
 
 	return (
 		<>
@@ -50,38 +47,31 @@ const StandardSecondHalf = () => {
 								</div>
 							);
 						})}
+
 					<div className="agenda-block">
-						{hasMultiplePerformers ? (
+						{!isIntermediateMusicHymn ? (
 							<>
-								<div className="title-container no-margin">
-									<p className="agenda-title">{intermediateMusic.title}</p>
-									{intermediateMusicLink ? (
-										<a
-											href={intermediateMusicLink as string}
-											target="_blank"
-											rel="noreferrer"
-											className="underline text-blue-800"
-										>
-											<p className="agenda-content">
-												{intermediateMusic.songTitle}
-											</p>
-										</a>
-									) : (
-										<p className="agenda-content">
-											{intermediateMusic.songTitle}
+								<div className="agenda-block">
+									<div className="title-container">
+										<p className="agenda-title">
+											{intermediateMusicLeftSide as string}
 										</p>
-									)}
-								</div>
-								{intermediateMusicPerformers.map((performer, index) => (
-									<div className="multiple-performers" key={index}>
-										<p className="agenda-content">{performer as string}</p>
+										<p className="agenda-content">
+											{intermediateMusicRightSide as string}
+										</p>
 									</div>
-								))}
+								</div>
+								{Array.isArray(intermediateMusicPerformers) &&
+									intermediateMusicPerformers.map((performer, index) => (
+										<div className="multiple-performers" key={index}>
+											<p className="agenda-content">{performer as string}</p>
+										</div>
+									))}
 							</>
 						) : (
 							<>
-								<div className="title-container">
-									<p className="agenda-title">{intermediateMusic.title}</p>
+								<div className="title-container no-margin">
+									<p className="agenda-title">Intermediate Hymn</p>
 									{intermediateMusicLink ? (
 										<a
 											href={intermediateMusicLink as string}
@@ -90,16 +80,20 @@ const StandardSecondHalf = () => {
 											className="underline text-blue-800"
 										>
 											<p className="agenda-content">
-												{intermediateMusic.hymnNumber}
+												{intermediateHymnNumber as string}
 											</p>
 										</a>
 									) : (
 										<p className="agenda-content">
-											{intermediateMusic.hymnNumber}
+											{intermediateHymnNumber as string}
 										</p>
 									)}
 								</div>
-								<p className="agenda-content hymn">{intermediateMusic.songTitle}</p>
+								<div className="title-container hymn">
+									<p className="agenda-content">
+										{intermediateHymnTitle as string}
+									</p>
+								</div>
 							</>
 						)}
 						{Array.isArray(blockThree) &&
