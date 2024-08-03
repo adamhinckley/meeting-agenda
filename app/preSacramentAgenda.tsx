@@ -28,10 +28,10 @@ const PreSacramentAgenda = () => {
 		conducting,
 		musicLeader,
 		accompanist,
-		openingHymn,
+		openingHymnNumber,
 		openingHymnTitle,
 		openingPrayer,
-		sacramentHymn,
+		sacramentHymnNumber,
 		sacramentHymnTitle,
 		blockOne,
 		openingHymnLink: savedOpeningHymnLink,
@@ -39,12 +39,12 @@ const PreSacramentAgenda = () => {
 	} = content;
 
 	const openingHymnLink = getHymnLink(
-		openingHymn as string,
+		openingHymnNumber as string,
 		openingHymnTitle as string,
 		savedOpeningHymnLink as string,
 	);
 	const sacramentHymnLink = getHymnLink(
-		sacramentHymn as string,
+		sacramentHymnNumber as string,
 		sacramentHymnTitle as string,
 		savedSacramentHymnLink as string,
 	);
@@ -78,10 +78,10 @@ const PreSacramentAgenda = () => {
 							rel="noreferrer"
 							className="underline text-blue-800"
 						>
-							<p className="agenda-content">{openingHymn as string}</p>
+							<p className="agenda-content">{openingHymnNumber as string}</p>
 						</a>
 					) : (
-						<p className="agenda-content">{openingHymn as string}</p>
+						<p className="agenda-content">{openingHymnNumber as string}</p>
 					)}
 				</div>
 				<div className="title-container  hymn">
@@ -115,10 +115,10 @@ const PreSacramentAgenda = () => {
 							rel="noreferrer"
 							className="underline text-blue-800"
 						>
-							<p className="agenda-content">{sacramentHymn as string}</p>
+							<p className="agenda-content">{sacramentHymnNumber as string}</p>
 						</a>
 					) : (
-						<p className="agenda-content ">{sacramentHymn as string}</p>
+						<p className="agenda-content ">{sacramentHymnNumber as string}</p>
 					)}
 				</div>
 				<div className="title-container hymn">

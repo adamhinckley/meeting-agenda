@@ -4,14 +4,14 @@ import { getHymnLink } from '@/utils/helpers';
 const ClosingHymnAndPrayer = () => {
 	const { content } = useAppContext();
 	const {
-		closingHymn,
+		closingHymnNumber,
 		closingHymnTitle,
 		closingPrayer,
 		closingHymnLink: savedClosingHymnLink,
 	} = content;
 
 	const closingHymnLink = getHymnLink(
-		closingHymn as string,
+		closingHymnNumber as string,
 		closingHymnTitle as string,
 		savedClosingHymnLink as string,
 	);
@@ -27,10 +27,10 @@ const ClosingHymnAndPrayer = () => {
 						rel="noreferrer"
 						className="underline text-blue-800"
 					>
-						<p className="agenda-content">{closingHymn as string}</p>
+						<p className="agenda-content">{closingHymnNumber as string}</p>
 					</a>
 				) : (
-					<p className="agenda-content">{closingHymn as string}</p>
+					<p className="agenda-content">{closingHymnNumber as string}</p>
 				)}
 			</div>
 			<div className="title-container hymn">

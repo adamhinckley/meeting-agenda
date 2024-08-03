@@ -40,7 +40,6 @@ const Controls = ({ index }: ControlsProps) => {
 		const newContent = cloneDeep(content);
 		Array.isArray(newContent.announcementsAndLessons) &&
 			newContent.announcementsAndLessons.splice(index, 1);
-		console.log(index, newContent.announcementsAndLessons);
 		setContent(newContent);
 	};
 
