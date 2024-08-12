@@ -66,44 +66,29 @@ const Announcements = () => {
 			<h3 className="text-base font-semibold text-center">Family History Corner</h3>
 			<ul>
 				<li>
-					Between his death and his resurrection Jesus "preached unto the spirits in
-					prison" (1 Peter 3:19-20) While the gospel may be accepted by spirits in the
-					spirit world, the ordinance of salvation must be performed for them by those who
-					are living here on Earth.{' '}
+					Our readings in Come, Follow Me this week are in a time of war between the
+					Nephites and the Lamanites. What do you know of your ancestors and relatives who
+					may have fought to preserve freedoms and way of life? What discovery clues do
+					their records contain?{' '}
 				</li>
 				<li>
-					"The dead who have not heard or who rejected the gospel in mortality are in
-					darkness, or in a state of misery (see{' '}
-					<a
-						href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/138.2?lang=eng#p2"
-						className="underline  text-blue-800"
-						target="_blank"
-					>
-						Alma 40:14; D&C 138:2
-					</a>{' '}
-					). Yet because of our Savior's visit, we have a hope for their salvation. We may
-					go to the temple and turn the key, opening the gates of heaven for them and, by
-					our service, for ourselves." (
-					<a
-						href="https://www.churchofjesuschrist.org/study/ensign/2003/07/the-saviors-visit-to-the-spirit-world?lang=eng&para=p4#p4"
-						target="_blank"
-						className="underline  text-blue-800"
-					>
-						The Savior's Visit to the Spirit World
-					</a>{' '}
-					," Spencer Condie Ensign, July 2003.)
+					While working with my mother on our own family history, it was the military
+					records of a family member which allowed us to verify and confirm several pieces
+					of his family's story. The records verified his various residences, confirmed
+					that he was single throughout his life, and mentioned his next of kin so that we
+					could clearly see that it was indeed our family member and not another soldier
+					with the same name. (Lani Jackson)
 				</li>
 				<li>
-					Through FamilySearch and{' '}
+					The{' '}
 					<a
-						href="https://www.familysearch.org/en/blog/ordinances-ready-algorithm"
+						href="https://www.familysearch.org/en/wiki/United_States_Military_Records"
 						target="_blank"
 						className="underline  text-blue-800"
 					>
-						Ordinances Ready
+						FamilySearch wiki
 					</a>{' '}
-					you can find your relatives, or even relatives of other ward members, who need
-					temple work done.{' '}
+					is one source that can help you research these records
 				</li>
 			</ul>
 		</div>
