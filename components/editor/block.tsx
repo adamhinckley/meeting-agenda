@@ -25,28 +25,26 @@ const Block = ({
 	const blockHeader = {
 		blockOne: {
 			header: 'Block One',
-			content: 'Before passing of the sacrament',
+			content: 'Before passing of the sacrament, i.e. confirmation, baby blessing, etc.',
 		},
 		blockTwo: {
 			header: 'Block Two',
-			content: 'After passing of the sacrament',
+			content: 'After passing of the sacrament.',
 		},
 		blockThree: {
 			header: 'Block Three',
-			content: 'After intermediate music',
+			content: 'After intermediate music.',
 		},
 	};
 
 	return (
-		<Accordion sx={{ padding: '0 12px 6px 12px' }}>
-			<AccordionSummary expandIcon={<ExpandMoreIcon />}>
-				<div className="flex flex-col">
-					<Typography variant="h6">{blockHeader[blockName].header}</Typography>
-					<Typography sx={{ mb: 2, fontSize: `${12 / 16}rem` }}>
-						{blockHeader[blockName].content}
-					</Typography>
-				</div>
-			</AccordionSummary>
+		<>
+			<div className="flex flex-col">
+				<Typography variant="h6">{blockHeader[blockName].header}</Typography>
+				<Typography sx={{ mb: 2, fontSize: `${12 / 16}rem` }}>
+					{blockHeader[blockName].content}
+				</Typography>
+			</div>
 			{Array.isArray(content[blockName]) &&
 				(content[blockName] as Array<any>).map((block: BlockOneItem, index) => (
 					<div
@@ -88,7 +86,7 @@ const Block = ({
 					<AddIcon />
 				</IconButton>
 			</div>
-		</Accordion>
+		</>
 	);
 };
 

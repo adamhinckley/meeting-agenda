@@ -1,19 +1,13 @@
 import Textfield from '@mui/material/TextField';
-import Typography from '@mui/material/Typography';
 import { useAppContext } from '@/context/AppContext';
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import type { EditorChildren } from '@/utils/types';
+import Box from '@mui/material/Box';
 
 const Leaders = ({ handleChange }: EditorChildren) => {
 	const { content } = useAppContext();
 	return (
-		<Accordion sx={{ padding: '0 12px' }}>
-			<AccordionSummary expandIcon={<ExpandMoreIcon />}>
-				<Typography variant="h6">Leaders</Typography>
-			</AccordionSummary>
+		<Box sx={{ marginTop: '16px' }}>
 			<Textfield
 				name="presiding"
 				value={content.presiding}
@@ -46,7 +40,7 @@ const Leaders = ({ handleChange }: EditorChildren) => {
 				label="Accompanist"
 				sx={{ mb: 2 }}
 			/>
-		</Accordion>
+		</Box>
 	);
 };
 
