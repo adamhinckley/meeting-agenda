@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { AppContextProvider } from '@/context/AppContext';
 import Head from 'next/head';
+import { redirect } from 'next/navigation';
 
 export const metadata: Metadata = {
 	title: 'Ward Program',
@@ -13,6 +14,7 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
+	redirect('https://app.wardprogram.com/?stake=tupelo&ward=florence');
 	return (
 		<html lang="en">
 			<Head>
