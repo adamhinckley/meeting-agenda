@@ -14,7 +14,7 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
-	redirect('https://app.wardprogram.com/?stake=tupelo&ward=florence');
+	redirect('https://app.wardprogram.com/?id=32c4a18a-561b-4033-a7a2-25f79b8bbe5a');
 	return (
 		<html lang="en">
 			<Head>
